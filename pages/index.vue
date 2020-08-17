@@ -17,7 +17,7 @@
         v-for="product in loadedProducts.slice(-4)"
         :key="product.id"
       >
-        <nuxt-link :to="{ path: '/products/' + product.id }">
+        <nuxt-link :to="'/products/' + product.id">
           <img class="my-image" v-bind:src="product.image" />
         </nuxt-link>
       </mdb-col>

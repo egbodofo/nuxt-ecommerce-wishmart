@@ -1,6 +1,6 @@
 <template>
   <mdb-navbar expand="large" dark color="indigo">
-    <mdb-navbar-brand to="#">Wishmart</mdb-navbar-brand>
+    <mdb-navbar-brand to="/">Wishmart</mdb-navbar-brand>
     <mdb-navbar-toggler>
       <mdb-navbar-nav right>
         <mdb-nav-item to="/" active>Home</mdb-nav-item>

@@ -57,7 +57,7 @@ export default {
   axios: {
     baseURL:
       process.env.BASE_URL ||
-      "https://papi-lara-ecommerce-api.herokuapp.com/api",
+      "https://larave-api.herokuapp.com/api",
     credentials: false
   },
   /*
