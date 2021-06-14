@@ -1,7 +1,7 @@
 <template>
-  <mdb-container id="dove mb-5">
+  <mdb-container id="home-container mb-5">
     <mdb-carousel
-      class="caro"
+      class="home-carousel"
       :interval="8000"
       slide
       :items="items"
@@ -18,7 +18,7 @@
         :key="product.id"
       >
         <nuxt-link :to="'/products/' + product.id">
-          <img class="my-image" v-bind:src="product.image" />
+          <img class="home-image" v-bind:src="product.image" alt="product-image" />
         </nuxt-link>
       </mdb-col>
     </mdb-row>
@@ -65,16 +65,16 @@ export default {
 </script>
 
 <style>
-.caro {
+.home-carousel {
   min-width: 80%;
   padding-top: 10px;
   margin: 0 auto;
   padding-bottom: 2em;
 }
-#dove {
+#home-container {
   width: 100%;
 }
-.my-image {
+.home-image {
   max-width: 220px !important;
   min-width: auto !important;
   max-height: 220px !important;

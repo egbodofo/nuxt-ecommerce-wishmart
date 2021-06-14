@@ -114,8 +114,4 @@ export default {
 p {
   padding-top: 10px;
 }
-/* .formclass {
-  width: 50em;
-  justify-items: center;
-} */
 </style>

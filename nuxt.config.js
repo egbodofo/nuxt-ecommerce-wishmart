@@ -61,9 +61,6 @@ export default {
     credentials: false
   },
   /*
-  https://laravelecommercetsx.herokuapp.com/api
-  https://papi-lara-ecommerce-api.herokuapp.com/api
-  https://e-papi-api.herokuapp.com
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */

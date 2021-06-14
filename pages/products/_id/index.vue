@@ -1,7 +1,7 @@
 <template>
   <mdb-container>
     <mdb-row>
-      <mdb-col class="colo text-center mt-4" md="6">
+      <mdb-col class="single-product text-center mt-4" md="6">
         <div>
           <img class="my-image" :src="loadedProduct.image" />
         </div>
@@ -17,7 +17,7 @@
         </mdb-btn>
       </mdb-col>
 
-      <mdb-col class="colo text-center mt-4" md="6">
+      <mdb-col class="single-product text-center mt-4" md="6">
         <p>
           Name:
           <strong>{{ loadedProduct.name }}</strong>
@@ -50,7 +50,6 @@
             Delete
           </button>
         </div>
-        <!-- </div> -->
 
         <nuxt-link to="/products" class="btn btn-sm btn-success"
           >Back to product</nuxt-link
@@ -133,7 +132,7 @@ export default {
   -moz-box-shadow: 0px 3px 38px -8px rgba(3, 23, 247, 0.88) !important;
   box-shadow: 0px 3px 38px -8px rgba(3, 23, 247, 0.88) !important;
 }
-.colo {
+.single-product {
   width: 100%;
   margin: 0 auto;
   justify-content: center;

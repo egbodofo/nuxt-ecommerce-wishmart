@@ -24,7 +24,7 @@
 
           <mdb-tbl-body v-for="item in $store.state.cart" :key="item.id">
             <tr>
-              <th id="troy" scope="row">
+              <th id="cart-image" scope="row">
                 <img v-bind:src="item.image" alt class="img-fluid z-depth-0 log" />
               </th>
               <td>
@@ -32,9 +32,9 @@
                   <strong>{{item.name}}</strong>
                 </h5>
               </td>
-              <td class="pad">₦{{item.price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}}</td>
-              <td class="pad">{{item.quantity}}</td>
-              <td class="pad">
+              <td class="cart-td">₦{{item.price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}}</td>
+              <td class="cart-td">{{item.quantity}}</td>
+              <td class="cart-td">
                 <strong>₦{{(item.quantity * item.price).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}}</strong>
               </td>
               <td>
@@ -81,13 +81,13 @@
       </mdb-btn>
       <mdb-btn class="mr-3 btn-sm">
         <nuxt-link to="/products">
-          <a class="cam">Continue Shopping</a>
+          <a class="cart-link">Continue Shopping</a>
         </nuxt-link>
       </mdb-btn>
 
       <mdb-btn v-if="auth" class="mr-3 btn-sm" color="primary">
         <nuxt-link to="/cart/checkout">
-          <a class="cam">Checkout</a>
+          <a class="cart-link">Checkout</a>
         </nuxt-link>
       </mdb-btn>
     </div>
@@ -145,20 +145,20 @@ export default {
 </script>
 
 <style scoped>
-.cam {
+.cart-link {
   color: white !important;
 }
 .log {
   max-height: 150px;
   min-width: 50px;
 }
-.pad {
+.cart-td {
   padding-top: 4.3rem;
 }
 .radius {
   border-radius: 10em;
 }
-#troy {
+#cart-image {
   max-width: 200px !important;
 }
 </style>

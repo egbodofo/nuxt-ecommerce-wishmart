@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { mdbInput, mdbCol, mdbRow, mdbContainer, mdbBtn } from 'mdbvue';
+import { mdbCol, mdbRow, mdbContainer, mdbBtn } from 'mdbvue';
 export default {
   name: 'Basic',
   components: {
